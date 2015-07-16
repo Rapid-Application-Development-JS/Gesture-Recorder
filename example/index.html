@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/index.css">
+	<title>Gesture Recorder</title>
+	<script src="bower_components/radjs-pointer/release/pointer.min.js"></script>
+	<script src="bower_components/radjs-gesture/release/gesture.min.js"></script>
+	<script src="../source/gesture-recorder.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var script = document.createElement("script");
+			script.setAttribute("src", "js/index.js");
+			document.head.appendChild(script);
+		});
+	</script>
+</head>
+<body>
+
+<div>
+	<button onclick="recordNewGesture()">Add New Gesture</button>
+	<button onclick="saveGesture()">Save Gesture</button>
+	<button onclick="clearGesture()">Clear Gesture</button>
+</div>
+
+<div class="main">
+	<div id="list" class="list"></div>
+	<div id="canvas-wrapper">
+		<canvas id="canvas" width="400px" height="400px"></canvas>
+	</div>
+</div>
+
+<!--<canvas id="canvasGesture" width="600px" height="800px" style="background-color:gray"></canvas>-->
+
+</body>
+</html>

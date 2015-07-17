@@ -44,23 +44,14 @@ function saveGesture() {
 		alert("At first make gesture");
 		return;
 	}
-	var item = document.createElement("div");
+	var item = document.createElement("li");
+	item.classList.add("topcoat-list__item");
 	var itemCanvas = document.createElement("canvas");
 	var itemSpan = document.createElement("div");
 	var itemContext = itemCanvas.getContext("2d");
 	itemSpan.textContent = gestureRecordingName;
-	itemSpan.style.margin = 0;
-	itemSpan.style.position = "absolute";
-	itemSpan.style.top = "50%";
-	itemSpan.style.left = "70px";
-	itemSpan.style.transform = "translate(0, -50%)";
-	itemCanvas.width = "60";
-	itemCanvas.height = "80";
-	itemCanvas.style.backgroundColor = "red";
-	item.style.backgroundColor = "aquamarine";
-	item.style.width = "100%";
-	item.style.height = "80px";
-	item.style.position = "relative";
+	itemCanvas.width = 96;
+	itemCanvas.height = 96;
 	$list.appendChild(item);
 	item.appendChild(itemCanvas);
 	item.appendChild(itemSpan);

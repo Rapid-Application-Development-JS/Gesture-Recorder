@@ -24,7 +24,8 @@
 
 <div class="github-fork-ribbon-wrapper right">
 	<div class="github-fork-ribbon">
-		<a href="https://github.com/Rapid-Application-Development-JS/Gesture-Recorder" target="_blank">Fork us on GitHub</a>
+		<a href="https://github.com/Rapid-Application-Development-JS/Gesture-Recorder" target="_blank">Fork us on
+			GitHub</a>
 	</div>
 </div>
 
@@ -37,6 +38,8 @@
 	<div class="main main-blocks">
 		<div class="topcoat-grid">
 
+			<br>
+
 			<div class="topcoat-grid__row center">
 				<div class="topcoat-grid__column--auto">
 					<div id="canvas-wrapper">
@@ -45,22 +48,37 @@
 				</div>
 			</div>
 
+			<br>
+
 			<div class="topcoat-grid__row center">
-				<div class="topcoat-grid__column--auto">
-					<button onclick="recordNewGesture()">Add New Gesture</button>
-					<button onclick="saveGesture()">Save Gesture</button>
-					<button onclick="clearGesture()">Clear Gesture</button>
+				<div class="topcoat-grid__column--4">
+					<button onclick="recordNewGesture()" class="topcoat-button">
+						Add New Gesture
+					</button>
+				</div>
+				<div class="topcoat-grid__column--4">
+					<button onclick="saveGesture()" class="topcoat-button">
+						Save Gesture
+					</button>
+				</div>
+				<div class="topcoat-grid__column--4">
+					<button onclick="clearGesture()" class="topcoat-button">
+						Clear Gesture
+					</button>
 				</div>
 			</div>
 
+			<br>
+
 			<div class="topcoat-grid__row center">
 				<div class="topcoat-grid__column--auto">
-					<div id="list" class="list">
-
+					<div class="topcoat-list">
+						<h3 class="topcoat-list__header">Saved gestures</h3>
+						<ul class="topcoat-list__container" id="list">
+						</ul>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>

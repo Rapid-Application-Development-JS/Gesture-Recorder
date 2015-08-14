@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="css/gh-fork-ribbon.css" type="text/css"/>
+    <link rel="stylesheet" href="css/transitions.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <title>Gesture</title>
+
+</head>
+
+<body>
+
+<div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/Rapid-Application-Development-JS/Gesture-Recorder" target="_blank">Fork us on GitHub</a>
+    </div>
+</div>
+
+<div class="main clearfix">
+
+    <div class="gesture-list pull-left">
+    	<ul id="list">
+    	</ul>
+    </div>
+
+    <div class="gesture-area pull-right">
+        <div id="recognize" class="canvas-container recognize">
+            <p class="message">Draw Gesture Here...</p>
+            <canvas class="canvas" id="canvas"></canvas>
+        </div>
+	</div>
+
+</div>
+<script src="libs/gesture.js"></script>
+<script src="libs/pointer.js"></script>
+<script src="gesture-recorder.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

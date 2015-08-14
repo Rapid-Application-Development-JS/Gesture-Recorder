@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0; 
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+li {
+    font-size: 20px;
+}
+body {
+    font: 400 16px/1.2em 'source-sans-pro', Arial, Helvetica Neue;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {list-style: none;}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main {
+    background: #ccc;
+    height: 100%;
+    width: 100%;
+}
+.gesture-list {
+    background-color: #4A4D4E;
+    color: #c6c8c8;
+    font-size: 16px;
+    height: 100%;
+    overflow: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: all .3s ease-in 0s;
+    -moz-transition: all .3s ease-in 0s;
+    -o-transition: all .3s ease-in 0s;
+    transition: all .3s ease-in 0s;
+    width: 30%;
+    z-index: 10;
+}
+
+.hidden {display: none !important;}
+
+.gesture-area {
+    position: relative;
+    width: 70%;
+    -webkit-transition: all .3s ease-in 0s;
+    -moz-transition: all .3s ease-in 0s;
+    -o-transition: all .3s ease-in 0s;
+    transition: all .3s ease-in 0s;
+}
+    .canvas-container {
+        position: absolute;
+        width: 100%;
+    }
+    .canvas-container.recognize {z-index: 1;}
+        .message {
+            animation: blink .7s infinite 4s linear alternate;
+            bottom: 0;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            height: 50px;
+            line-height: 50px;
+            margin: auto;
+            opacity: 0;
+            text-align: center;
+            top: 0;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+        .gesture-area canvas {
+            width: 100%;
+        }
+        .canvas {
+            background: #222;
+        }
+
+
+@-webkit-keyframes blink {
+  0% {opacity: .1;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes blink {
+  0% {opacity: .1;}
+  100% {opacity: 1;}
+}
+@-ms-keyframes blink {
+  0% {opacity: .1;}
+  100% {opacity: 1;}
+}
+@-o-keyframes blink {
+  0% {opacity: .1;}
+  100% {opacity: 1;}
+}
+@keyframes blink {
+  0% {opacity: .1;}
+  100% {opacity: 1;}
+}

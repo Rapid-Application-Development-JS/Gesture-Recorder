@@ -3,10 +3,15 @@ var gulp  = require('gulp'),
     rename = require("gulp-rename");
 
 gulp.task('uglify', function() {
-    return gulp.src('gesture-recorder.js')
+    return gulp.src('source/gesture-recorder.js')
         .pipe(uglifyJS())
         .pipe(rename("gesture-recorder.min.js"))
         .pipe(gulp.dest('./release/'));
 });
 
-gulp.task('default', ['uglify']);
+gulp.task('copy', function() {
+    return gulp.src('source/gesture-recorder.js')
+        .pipe(gulp.dest('./example/'));
+});
+
+gulp.task('default', ['uglify', 'copy']);

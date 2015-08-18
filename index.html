@@ -22,60 +22,21 @@
     </div>
 </div>
 
-
 <div class="main clearfix">
-
-    <div id="list_btn" class="btn-group">
-        <button id="addGesture" class="btn btn-add"><i class="fa fa-plus"></i></button>
-        <button class="btn btn-clear pull-right"><i class="fa fa-trash-o"></i> <span>Clear All</span></button>
-    </div><!-- /.btn-group -->
 
     <div class="gesture-list pull-left">
     	<ul id="list">
     	</ul>
-    </div><!-- /.gesture-list -->
+    </div>
 
     <div class="gesture-area pull-right">
         <div id="recognize" class="canvas-container recognize">
-            <p class="message">Draw Gesture From List...</p>
-            <canvas class="gesture-recognize" id="canvasGesture"></canvas>
+            <p class="message">Draw Gesture Here...</p>
+            <canvas class="canvas" id="canvas"></canvas>
         </div>
-        <div id="draw" class="canvas-container draw">
-            <button id="btnApply" class="btn btn-apply hidden">Apply</button>
-            <button id="btnCancel" class="btn btn-cancel">Cancel</button>
-            <p class="message">Draw New Gesture Here...</p>
-    	    <canvas class="gesture-draw" id="canvas"></canvas>
-        </div>
-	</div><!-- /.gesture-area -->
+	</div>
 
-    <div id="modal" class="gesture-name-popup modal">
-        <div class="modal-header">
-            <div id="closeNamePopup" class="btn btn-close" data-dismiss="modal"><i class="fa fa-times"></i></div>
-        </div>
-        <div class="modal-body">
-            <p class="modal-title">Enter Gesture Name:</p>
-            <input id ="gestureNameInput" class="form-control" type="text" />
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-sm btn-save" onclick="saveGesture()">Save</button>
-            <button id="cancelNamePopup" class="btn btn-sm btn-cancel" data-dismiss="modal">Cancel</button>
-        </div>
-    </div><!-- /.gesture-name-popup -->
-
-    <div id="no-gestures-popup" class="gesture-name-popup modal">
-        <div class="modal-header">
-            <div id="" class="btn btn-close" data-dismiss="modal"><i class="fa fa-times"></i></div>
-        </div>
-        <div class="modal-body">
-            <p class="modal-title">You should add a gesture to gesture list first!</p>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-sm btn-ok">OK</button>
-        </div>
-    </div><!-- /.gesture-name-popup -->
-
-</div><!-- /.main -->
-
+</div>
 <script src="libs/gesture.js"></script>
 <script src="libs/pointer.js"></script>
 <script src="source/gesture-recorder.js"></script>

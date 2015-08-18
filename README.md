@@ -2,7 +2,7 @@
 Easily create gesture patterns that you can record and save in touch based applications.
 Use gesture-recorder to record your gesture and get it as a string or array.Then you can use your gesture to compare with other gestures with help of [Gesture](https://github.com/Rapid-Application-Development-JS/Gesture).
 
-[Example](http://rapid-application-development-js.github.io/Gesture-Recorder/example)
+[Example](https://github.com/Rapid-Application-Development-JS/Gesture/tree/master/example/index.html)
 
 ---
 
